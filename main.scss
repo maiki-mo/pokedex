@@ -139,6 +139,7 @@ header {
 .grid-box2 {
     grid-row: 1;
     grid-column: 2;
+    height: 70vw;
 }
 
 .grid-box3 {
@@ -292,11 +293,11 @@ footer {
     position: relative;
     bottom: 2vw;
     width: 20vw;
-    font-size: 1vw !important;
+    font-size: 10px !important;
 }
 
 .info * {
-    font-size: 1vw !important;
+    font-size: 10px !important;
 }
 
 #lvl-display {
@@ -379,6 +380,10 @@ footer {
     left: 14vw;
     bottom: 3.2vw;
     width: 30vw;
+}
+
+#poke1>p {
+    font-size: 2vw !important;
 }
 
 #poke1:hover #vap-arrow {
