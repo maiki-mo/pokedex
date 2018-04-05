@@ -72,19 +72,25 @@ function changePokemon(id){
 function vaporeonFunc() {
   changePokemon(0);
   var imgInfo = document.querySelector(".image-info");
-  imgInfo.style.display = "block";
+	var targ = document.querySelector(".pokemon");
+	targ.style.display = "none";
+	imgInfo.style.display = "block";
 }
 
 function jolteonFunc() {
   changePokemon(1);
   var imgInfo = document.querySelector(".image-info");
   imgInfo.style.display = "block";
+	var targ = document.querySelector(".pokemon");
+	targ.style.display = "none";
 }
 
 function flareonFunc() {
   changePokemon(2);
   var imgInfo = document.querySelector(".image-info");
   imgInfo.style.display = "block";
+	var targ = document.querySelector(".pokemon");
+	targ.style.display = "none";
 }
 
 //targets items to change pokemon

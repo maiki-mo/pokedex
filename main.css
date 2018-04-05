@@ -68,11 +68,11 @@ hr {
   animation-name: fade-intro;
   animation-duration: 5s;
   animation-delay: 7s;
-  animation-timing-function: linear; 
+  animation-timing-function: linear;
 }
 
 .post-load > img {
-  width: 58vw; 
+  width: 58vw;
 }
 
 /* header with hr and text */
@@ -453,7 +453,7 @@ footer {
   from {
     background-color: black; }
   to {
-    background-color: red; } 
+    background-color: red; }
   }
 
   @keyframes appear {
@@ -468,6 +468,12 @@ footer {
   }
 
   @keyframes attack {
+    0% {left: 1.2vw; top: 0vw; opacity: 1}
+    50% {left: -2vw; top: 1.6vw; opacity: 0;}
+    0% {left: 1.2vw; top: 0vw; opacity: 1;}
+  }
+
+  @keyframes attack2 {
     0% {left: 1.2vw; top: 0vw; opacity: 1}
     50% {left: -2vw; top: 1.6vw; opacity: 0;}
     0% {left: 1.2vw; top: 0vw; opacity: 1;}
