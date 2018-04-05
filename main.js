@@ -1,8 +1,3 @@
-// video timeout //
-
-setTimeout(function(){
-  document.getElementById("intro-vid").play();
-}, 7000);
 
 //create pokmeon class and push info
 

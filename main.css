@@ -399,9 +399,14 @@ footer {
   text-transform: uppercase; }
 
 #poke-image {
+  display: block;
   width: 15vw;
   position: relative;
-  left: 1.2vw; }
+  left: 1.2vw;
+  animation-name: attack;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
 
 /* sub footer */
 .sub > p {
@@ -460,5 +465,11 @@ footer {
     0% {opacity: 0; left: 50vw;}
     80% {opacity: 0; left: 30vw;}
     100% {opacity: 1; left: 0vw;}
+  }
+
+  @keyframes attack {
+    0% {left: 1.2vw; top: 0vw; opacity: 1}
+    50% {left: -2vw; top: 1.6vw; opacity: 0;}
+    0% {left: 1.2vw; top: 0vw; opacity: 1;}
   }
 /*# sourceMappingURL=main.css.map */
