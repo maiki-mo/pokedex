@@ -62,18 +62,16 @@ hr {
 /* post load */
 .post-load {
   position: relative;
-  bottom: 24vw;
+  bottom: 22vw;
   left: 24vw;
   opacity: 0;
   animation-name: fade-intro;
   animation-duration: 5s;
   animation-delay: 7s;
-  animation-timing-function: linear;
-}
+  animation-timing-function: linear; }
 
 .post-load > img {
-  width: 58vw;
-}
+  width: 58vw; }
 
 /* header with hr and text */
 header {
@@ -168,13 +166,7 @@ footer {
   margin: 2.5vw 0 0 3vw;
   border-radius: 0;
   background-color: white;
-  font-size: 2vw;
-  opacity: 0;
-  animation-name: fade-intro;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
-  animation-delay: 14s;
-}
+  font-size: 2vw; }
 
 #trainer-name {
   font-size: 1.8vw;
@@ -200,27 +192,13 @@ footer {
   height: 20vw;
   width: 20vw;
   margin: 4vw 0 0 2vw;
-  background-color: white;
-  position: relative;
-  opacity: 0;
-  left: 50vw;
-  animation-name: slide-in;
-  animation-duration: 1s;
-  animation-delay: 12s;
-  animation-fill-mode: forwards;
-}
+  background-color: white; }
 
 #arrow-balls {
   width: 25vw;
   position: relative;
   top: 0vw;
-  right: 0vw;
-  opacity: 0;
-  animation-name: fade-intro;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
-  animation-delay: 14s;
-}
+  right: 0vw; }
 
 .image-info {
   z-index: 4;
@@ -263,14 +241,21 @@ footer {
   visibility: hidden; }
 
 #abl-list {
-  visibility: hidden;
+  visibility: visible;
   position: relative;
   bottom: 1vw;
   right: 1.5vw;
   width: 20vw; }
 
+#ab1 {
+  position: relative;
+  right: 2vw;
+  top: 0.1vw; }
+
 #ab2 {
-  margin-top: 0.5vw; }
+  position: relative;
+  right: 2vw;
+  bottom: 0.1vw; }
 
 #arr-hover {
   width: 10vw; }
@@ -287,10 +272,10 @@ footer {
   position: relative;
   bottom: 2vw;
   width: 20vw;
-  font-size: 10px !important; }
+  font-size: 1vw !important; }
 
 .info * {
-  font-size: 10px !important; }
+  font-size: 1vw !important; }
 
 #lvl-display {
   position: relative;
@@ -399,14 +384,12 @@ footer {
   text-transform: uppercase; }
 
 #poke-image {
-  display: block;
   width: 15vw;
   position: relative;
   left: 1.2vw;
   animation-name: attack;
   animation-duration: 1s;
-  animation-fill-mode: forwards;
-}
+  animation-fill-mode: forwards; }
 
 /* sub footer */
 .sub > p {
@@ -453,29 +436,23 @@ footer {
   from {
     background-color: black; }
   to {
-    background-color: red; }
-  }
+    background-color: red; } }
+@keyframes attack {
+  0% {
+    left: 1.2vw;
+    top: 0vw;
+    opacity: 1; }
+  25% {
+    left: 1vw;
+    top: 0.5vw;
+    opacity: 1; }
+  50% {
+    left: 0vw;
+    top: 1vw;
+    opacity: 0; }
+  100% {
+    left: 1.2vw;
+    top: 0vw;
+    opacity: 1; } }
 
-  @keyframes appear {
-    from {display: none;}
-    to {display: inline;}
-  }
-
-  @keyframes slide-in {
-    0% {opacity: 0; left: 50vw;}
-    80% {opacity: 0; left: 30vw;}
-    100% {opacity: 1; left: 0vw;}
-  }
-
-  @keyframes attack {
-    0% {left: 1.2vw; top: 0vw; opacity: 1}
-    50% {left: -2vw; top: 1.6vw; opacity: 0;}
-    0% {left: 1.2vw; top: 0vw; opacity: 1;}
-  }
-
-  @keyframes attack2 {
-    0% {left: 1.2vw; top: 0vw; opacity: 1}
-    50% {left: -2vw; top: 1.6vw; opacity: 0;}
-    0% {left: 1.2vw; top: 0vw; opacity: 1;}
-  }
 /*# sourceMappingURL=main.css.map */

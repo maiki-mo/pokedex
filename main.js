@@ -102,20 +102,20 @@ joltTarg.addEventListener("click", jolteonFunc);
 var flarTarg = document.querySelector("#poke2");
 flarTarg.addEventListener("click", flareonFunc);
 
-var ablTarg = document.querySelector("#abilities");
-ablTarg.addEventListener("click", dispAbl);
+// var ablTarg = document.querySelector("#abilities");
+// ablTarg.addEventListener("click", dispAbl);
 
 var pkmnMenu = document.querySelector(".menu");
 pkmnMenu.addEventListener("click", pokeMenu);
 
-function dispAbl() {
-  let targ = document.querySelector("#abl-list");
-    if (targ.style.visibility === "hidden") {
-      targ.style.visibility = "visible";
-    } else {
-      targ.style.visibility = "hidden";
-    }
-}
+// function dispAbl() {
+//   let targ = document.querySelector("#abl-list");
+//     if (targ.style.visibility === "hidden") {
+//       targ.style.visibility = "visible";
+//     } else {
+//       targ.style.visibility = "hidden";
+//     }
+// }
 
 //main pkmn menu will reveal/take away individual pokemon
 
