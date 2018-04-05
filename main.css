@@ -62,16 +62,18 @@ hr {
 /* post load */
 .post-load {
   position: relative;
-  bottom: 22vw;
+  bottom: 24vw;
   left: 24vw;
   opacity: 0;
   animation-name: fade-intro;
   animation-duration: 5s;
   animation-delay: 7s;
-  animation-timing-function: linear; }
+  animation-timing-function: linear; 
+}
 
 .post-load > img {
-  width: 58vw; }
+  width: 58vw; 
+}
 
 /* header with hr and text */
 header {
@@ -166,7 +168,13 @@ footer {
   margin: 2.5vw 0 0 3vw;
   border-radius: 0;
   background-color: white;
-  font-size: 2vw; }
+  font-size: 2vw;
+  opacity: 0;
+  animation-name: fade-intro;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-delay: 14s;
+}
 
 #trainer-name {
   font-size: 1.8vw;
@@ -192,13 +200,27 @@ footer {
   height: 20vw;
   width: 20vw;
   margin: 4vw 0 0 2vw;
-  background-color: white; }
+  background-color: white;
+  position: relative;
+  opacity: 0;
+  left: 50vw;
+  animation-name: slide-in;
+  animation-duration: 1s;
+  animation-delay: 12s;
+  animation-fill-mode: forwards;
+}
 
 #arrow-balls {
   width: 25vw;
   position: relative;
   top: 0vw;
-  right: 0vw; }
+  right: 0vw;
+  opacity: 0;
+  animation-name: fade-intro;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-delay: 14s;
+}
 
 .image-info {
   z-index: 4;
@@ -426,6 +448,17 @@ footer {
   from {
     background-color: black; }
   to {
-    background-color: red; } }
+    background-color: red; } 
+  }
 
+  @keyframes appear {
+    from {display: none;}
+    to {display: inline;}
+  }
+
+  @keyframes slide-in {
+    0% {opacity: 0; left: 50vw;}
+    80% {opacity: 0; left: 30vw;}
+    100% {opacity: 1; left: 0vw;}
+  }
 /*# sourceMappingURL=main.css.map */

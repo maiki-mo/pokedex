@@ -1,3 +1,9 @@
+// video timeout //
+
+setTimeout(function(){
+  document.getElementById("intro-vid").play();
+}, 7000);
+
 //create pokmeon class and push info
 
 class Pokemon {
@@ -114,6 +120,10 @@ function dispAbl() {
 
 function pokeMenu() {
   let targ = document.querySelector(".pokemon");
+  var imgInfo = document.querySelector(".image-info");
+    if (imgInfo.style.display === "block") {
+      imgInfo.style.display = "none";
+    }
     if (targ.style.display === "block") {
       targ.style.display = "none";
     } else {
