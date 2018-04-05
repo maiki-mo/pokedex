@@ -71,6 +71,24 @@ hr {
     bottom: 30px;
 }
 
+/* post load */
+
+.post-load {
+  position: relative;
+  bottom: 22vw;
+  left: 24vw;
+  opacity: 0;
+  animation-name: fade-intro;
+  animation-duration: 5s;
+  animation-delay:7s;
+  animation-timing-function: linear;
+}
+
+.post-load>img {
+
+  width: 58vw;
+}
+
 /* header with hr and text */
 header {
     z-index: 3;
@@ -164,7 +182,7 @@ footer {
     margin-top: -53%;
     opacity: 0;
     animation-name: fade-out;
-    animation-delay: 7s;
+    animation-delay: 12s;
     animation-duration: 0.1s;
     animation-fill-mode: forwards;
 }
@@ -466,6 +484,12 @@ footer {
 @keyframes fade-in {
     from {opacity: 1;}
     to {opacity: 0;}
+}
+
+@keyframes fade-intro {
+    0% {opacity: 0}
+    10% {opacity: 1}
+    100% {opacity: 1}
 }
 
 @keyframes fade-out {
