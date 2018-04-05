@@ -203,7 +203,7 @@ footer {
 .image-info {
   z-index: 4;
   position: relative;
-  bottom: 50vw !important;
+  bottom: 35vw !important;
   left: 30vw;
   width: 10vw;
   height: 20vw;
