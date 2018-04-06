@@ -74,7 +74,9 @@ function vaporeonFunc() {
   var imgInfo = document.querySelector(".image-info");
 	var targ = document.querySelector(".pokemon");
 	targ.style.display = "none";
-	imgInfo.style.display = "block";
+  imgInfo.style.display = "block";
+  let moveMarg = document.querySelector("#marg-img");
+  moveMarg.src = "images/new-margin-vap.png";
 }
 
 function jolteonFunc() {
@@ -82,7 +84,9 @@ function jolteonFunc() {
   var imgInfo = document.querySelector(".image-info");
   imgInfo.style.display = "block";
 	var targ = document.querySelector(".pokemon");
-	targ.style.display = "none";
+  targ.style.display = "none";
+  let moveMarg = document.querySelector("#marg-img");
+  moveMarg.src = "images/new-margin-jolt.png";
 }
 
 function flareonFunc() {
@@ -90,7 +94,9 @@ function flareonFunc() {
   var imgInfo = document.querySelector(".image-info");
   imgInfo.style.display = "block";
 	var targ = document.querySelector(".pokemon");
-	targ.style.display = "none";
+  targ.style.display = "none";
+  let moveMarg = document.querySelector("#marg-img");
+  moveMarg.src = "images/new-margin-flr.png";
 }
 
 //targets items to change pokemon
@@ -130,6 +136,22 @@ function pokeMenu() {
     } else {
       targ.style.display = "block";
     }
+    let moveMarg = document.querySelector(".new-margin");
+  if (moveMarg.style.visibility === "visible") {
+    moveMarg.style.visibility = "hidden";
+  }
+}
+
+let moveTarg = document.querySelector("#move-arrow");
+moveTarg.addEventListener("click", moveDisplay);
+
+function moveDisplay() {
+  let moveMarg = document.querySelector(".new-margin");
+  if (moveMarg.style.visibility === "hidden") {
+    moveMarg.style.visibility = "visible";
+  } else {
+    moveMarg.style.visibility = "hidden";
+  }
 }
 
 
@@ -139,3 +161,9 @@ function pokeMenu() {
 // base df: response.data.stats[3].base_stat;
 // abilities: response.data.abilities followed by [0] or [1] and .ability and .name
 // name of pokemon: response.data.forms[0].name
+
+// movsets
+//pokeDex[id].moves[13].move.name = "hyper beam"
+//pokeDex[id].moves[17].move.name = "quick-attack"
+//pokeDex[id].moves[14].move.name = "blizzard"
+//pokeDex[id].moves[18].move.name = "strength"
