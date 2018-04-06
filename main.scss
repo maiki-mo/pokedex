@@ -237,7 +237,7 @@ footer {
     right: 50vw;
     background-color: white;
     animation-name: slide-in;
-    animation-duration: 1s;
+    animation-duration: 2s;
     animation-delay: 12s;
     animation-fill-mode: forwards;
 }
@@ -541,12 +541,6 @@ footer {
     display: inline;
 }
 
-.move-info {
-    position: relative;
-    bottom: 5vw;
-    right: 20vw;
-    width: 30vw;
-}
 
 .move-info>p {
     width: 20vw;

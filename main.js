@@ -74,7 +74,9 @@ function vaporeonFunc() {
   var imgInfo = document.querySelector(".image-info");
 	var targ = document.querySelector(".pokemon");
 	targ.style.display = "none";
-	imgInfo.style.display = "block";
+  imgInfo.style.display = "block";
+  let moveMarg = document.querySelector("#marg-img");
+  moveMarg.src = "images/new-margin-vap.png";
 }
 
 function jolteonFunc() {
@@ -82,7 +84,9 @@ function jolteonFunc() {
   var imgInfo = document.querySelector(".image-info");
   imgInfo.style.display = "block";
 	var targ = document.querySelector(".pokemon");
-	targ.style.display = "none";
+  targ.style.display = "none";
+  let moveMarg = document.querySelector("#marg-img");
+  moveMarg.src = "images/new-margin-jolt.png";
 }
 
 function flareonFunc() {
@@ -90,7 +94,9 @@ function flareonFunc() {
   var imgInfo = document.querySelector(".image-info");
   imgInfo.style.display = "block";
 	var targ = document.querySelector(".pokemon");
-	targ.style.display = "none";
+  targ.style.display = "none";
+  let moveMarg = document.querySelector("#marg-img");
+  moveMarg.src = "images/new-margin-flr.png";
 }
 
 //targets items to change pokemon
@@ -131,9 +137,7 @@ function pokeMenu() {
       targ.style.display = "block";
     }
     let moveMarg = document.querySelector(".new-margin");
-  if (moveMarg.style.visibility === "hidden") {
-    moveMarg.style.visibility = "visible";
-  } else {
+  if (moveMarg.style.visibility === "visible") {
     moveMarg.style.visibility = "hidden";
   }
 }
